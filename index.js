@@ -1,24 +1,24 @@
 // Buena suerte!
 // las variables de formulario
-var holderName = document.querySelector("#holder-name");
+const holderName = document.querySelector("#holder-name");
 /* holderName.setAttribute("required", true); */
 
 
-var holderCardNumber = document.querySelector("#holder-card-number");
+const holderCardNumber = document.querySelector("#holder-card-number");
 
-var expDate = document.querySelector("#exp-date");
+const expDate = document.querySelector("#exp-date");
 
-var mmYy = document.querySelector("#mm-yy");
+const mmYy = document.querySelector("#mm-yy");
 
-var cvc = document.querySelector("#cvc");
+const cvc = document.querySelector("#cvc");
 
 
 //las variables de imagen
-var cardUsername = document.querySelector("#card-username");
-var cardNumber = document.querySelector("#card-number");
-var cardMonth = document.querySelector("#card-month");
-var cardYear = document.querySelector("#card-year");
-var cardCvc = document.querySelector("#card-cvc");
+const cardUsername = document.querySelector("#card-username");
+const cardNumber = document.querySelector("#card-number");
+const cardMonth = document.querySelector("#card-month");
+const cardYear = document.querySelector("#card-year");
+const cardCvc = document.querySelector("#card-cvc");
 
 
 
@@ -26,7 +26,7 @@ var cardCvc = document.querySelector("#card-cvc");
 holderName.addEventListener('input', function () {
 	cardUsername.textContent = holderName.value;
 
-	console.log(cardUsername.textContent);
+	//console.log(cardUsername.textContent);
 });
 
 //logica para el campo  Card number 
@@ -38,32 +38,26 @@ holderCardNumber.addEventListener('input', function () {
 //logica para el campo  expDate
 expDate.addEventListener('input', function () {
 	cardMonth.textContent = expDate.value;
-
-
 });
 
 
 //logica para el campo mmYy
 mmYy.addEventListener('input', function () {
 	cardYear.textContent = mmYy.value;
-
-
 });
 
 //logica para el campo  cvc
 cvc.addEventListener('input', function () {
 	cardCvc.textContent = cvc.value;
-
-
 });
 
 
-document.getElementById('mm-yy').addEventListener('input', function () {
-	var input = this.value;
+mmYy.addEventListener('input', function () {
+	var inputYear = mmYy.value;
 
-	// Añadimos la barra automáticamente después de 2 dígitos
-	if (input.length === 2 && input.indexOf('/') === -1) {
-		this.value = input + '/';
+	if (inputYear.length === 2) {
+		mmYy.value = inputYear + '/';
 	}
+
 });
 

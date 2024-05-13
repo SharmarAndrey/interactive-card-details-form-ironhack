@@ -141,6 +141,8 @@ main {
 
 .card-number {
 	font-size: 1.5rem;
+
+	height: 84px;
 }
 
 @media (width> 900px) {
