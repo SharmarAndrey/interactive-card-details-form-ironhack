@@ -58,4 +58,12 @@ cvc.addEventListener('input', function () {
 });
 
 
+document.getElementById('mm-yy').addEventListener('input', function () {
+	var input = this.value;
+
+	// Añadimos la barra automáticamente después de 2 dígitos
+	if (input.length === 2 && input.indexOf('/') === -1) {
+		this.value = input + '/';
+	}
+});
 
