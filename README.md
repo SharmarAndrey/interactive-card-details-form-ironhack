@@ -17,3 +17,12 @@ Os adjunto la demo para que veaís fácilmente como funciona la app. No inspecci
 6. Bonus! Puedes hacer que al seleccionar un valor, se quede marcado en naranja.
 
 ## Pregunta 1: Describe con lenguaje natural que tiene que hacer la app.
+//1.epmlemantar el codigo para que tados que introduce usuario se aparecen en image( cundo click de raton esta fuera de formulario)
+
+2.Cuando usuario pica "Confim" el formulyario ponemos oculto y en pantalla tiene que salir mensje de confirmacion
+
+3.Ponemos cada campo obligatorio para rellenar, si no - sale un error
+
+4.Tenemos que limitat longitud de los campos de formulario
+
+5. Implemantar codigo para que Card number aprece con espacios dentro cada 4 numeros
