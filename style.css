@@ -226,6 +226,14 @@ input {
 	padding: var(--input-padding);
 }
 
+input.invalid {
+	border-color: red;
+}
+
+input.valid {
+	border-color: green;
+}
+
 input:focus {
 	border-color: var(--gradient-primary);
 }

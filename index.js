@@ -60,12 +60,36 @@ const formElements = document.querySelector("#form-elements");
 
 const successContainer = document.querySelector("#success-container");
 
+const inputs = form.querySelectorAll("input");
+
 form.addEventListener('submit', function(event){
 	event.preventDefault();
 	formElements.style.display = "none";
 	successContainer.style.display = "block";
-	console.log("Hola");
+	inputs.forEach(input => {
+		input.addEventListener("input", function(){
+
+		})
+		if ("input".checkValidity()){
+			input.classList.remove("invalid");
+			input.classList.add("valid");
+		}
+		else{
+			input.classList.remove("valid");
+			input.classList.add("invalid");
+		}
+	});
 });
+
+// distinto color para campo válido o inválido
+
+
+
+
+
+
+
+
 
 
 // document.getElementById('confirm-btn').addEventListener('click', function(e){
