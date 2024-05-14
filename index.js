@@ -1,5 +1,6 @@
 // Buena suerte!
 // las variables de formulario
+
 const holderName = document.querySelector("#holder-name");
 /* holderName.setAttribute("required", true); */
 
@@ -51,13 +52,38 @@ cvc.addEventListener('input', function () {
 	cardCvc.textContent = cvc.value;
 });
 
+// logica botón Confirm
 
-mmYy.addEventListener('input', function () {
-	var inputYear = mmYy.value;
+const form = document.querySelector("#formulario");
 
-	if (inputYear.length === 2) {
-		mmYy.value = inputYear + '/';
-	}
+const formElements = document.querySelector("#form-elements");
 
+const successContainer = document.querySelector("#success-container");
+
+form.addEventListener('submit', function(event){
+	event.preventDefault();
+	formElements.style.display = "none";
+	successContainer.style.display = "block";
+	console.log("Hola");
 });
+
+
+// document.getElementById('confirm-btn').addEventListener('click', function(e){
+// 	e.preventDefault();
+// 	// formElements.style.display = "none";
+// }
+// );
+
+
+
+// Poner barra "/"
+
+// mmYy.addEventListener('input', function () {
+// 	var inputYear = mmYy.value;
+
+// 	if (inputYear.length === 2) {
+// 		mmYy.value = inputYear + '/';
+// 	}
+
+// });
 

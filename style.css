@@ -171,6 +171,7 @@ main {
 	top: 50%;
 	right: 5%;
 	transform: translate(0, -40%);
+	/* padding-bottom: 70px; */
 }
 
 @media (width > 900px) {
@@ -181,7 +182,7 @@ main {
 	.card-cvc {
 		top: 50%;
 		right: 10%;
-		transform: translate(0, -10%);
+		/* transform: translate(0, -10%); */
 	}
 }
 
@@ -231,6 +232,7 @@ input:focus {
 
 .card-cvc {
 	border-color: var(--clr-primary-100);
+
 }
 
 .error-msg {
